@@ -8,7 +8,8 @@ namespace tea_shop
 {
    public class order
     {
-       public List<order> orderlist = new List<order>();
+       order_repositary or = new order_repositary();
+
         private product _prod;
 
         public product Prod
@@ -22,17 +23,17 @@ namespace tea_shop
           get { return _quantity; }
           set { _quantity = value; }
 }
-        private int _subtotal;
+        private float _subtotal;
 
-        public int Subtotal
+        public float Subtotal
         {
             get { return _subtotal; }
            
         }
-        public int unitPrice(string pname,products ap)
+        public float unitPrice(string pname)
         {
-            int Up = 0;
-            foreach (var item in ap.productList)
+            float Up = 0;
+            foreach (var item in product_repositary.productList)
             {
                
                 if (pname == item.Pname)
@@ -47,16 +48,16 @@ namespace tea_shop
         public order()
         { 
         }
-        public order(product product,int quatity,products ap)
+        public order(product product,int quatity)
         {
             this._quantity= quatity;
-            this._subtotal = unitPrice(product.Pname,ap) * quatity;
+            this._subtotal = unitPrice(product.Pname) * quatity;
             this._prod = product;
         }
-        public product prodct_tetail(string prod,products op)
+        public product prodct_tetail(string prod)
         {
             product t=new product();
-            foreach (product item in op.productList)
+            foreach (product item in product_repositary.productList)
             {
 
                 if (prod == item.Pname)
@@ -69,10 +70,7 @@ namespace tea_shop
             return t;
 
         }
-        public void add_order(order temp)
-        {
-            orderlist.Add(temp);
-        }
+      
 
     }
 }

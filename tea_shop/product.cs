@@ -17,19 +17,28 @@ namespace tea_shop
             get { return _pname; }
             set { _pname = value; }
         }
-        private int _price;
+        private float _price;
 
-        public int Price
+        public float Price
         {
             get { return _price; }
-          
+            set { _price = value; }
         }
+        private int _prodid;
+
+        public int Prodid
+        {
+            get { return _prodid; }
+           
+        }
+        
         public product() { }
 
-        public product(string name, int price)
+        public product(string name, float price,int pid)
         {
             this._pname = name;
             this._price = price;
+            this._prodid = pid;
         }
        
        

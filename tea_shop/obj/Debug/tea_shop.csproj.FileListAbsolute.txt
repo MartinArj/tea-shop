@@ -1,6 +1,5 @@
 C:\Users\ELCOT\Documents\Visual Studio 2012\Projects\tea_shop\tea_shop\bin\Debug\tea_shop.exe.config
 C:\Users\ELCOT\Documents\Visual Studio 2012\Projects\tea_shop\tea_shop\bin\Debug\tea_shop.exe
 C:\Users\ELCOT\Documents\Visual Studio 2012\Projects\tea_shop\tea_shop\bin\Debug\tea_shop.pdb
-C:\Users\ELCOT\Documents\Visual Studio 2012\Projects\tea_shop\tea_shop\obj\Debug\tea_shop.csprojResolveAssemblyReference.cache
 C:\Users\ELCOT\Documents\Visual Studio 2012\Projects\tea_shop\tea_shop\obj\Debug\tea_shop.exe
 C:\Users\ELCOT\Documents\Visual Studio 2012\Projects\tea_shop\tea_shop\obj\Debug\tea_shop.pdb

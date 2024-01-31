@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bill.cs" />
+    <Compile Include="bill_repositary.cs" />
     <Compile Include="order.cs" />
+    <Compile Include="order_repositary.cs" />
     <Compile Include="product.cs" />
-    <Compile Include="products.cs" />
+    <Compile Include="product_repositary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
