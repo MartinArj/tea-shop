@@ -73,7 +73,7 @@ namespace tea_shop
                cmd.CommandText = "INSERT INTO product values('"+name+"',"+price+")";
           
                cmd.ExecuteNonQuery();
-               product_repositary.productList.Add(new product(name, price,id));
+               product_repositary.productList.Add(new product(name, price,++id));
                prod_dic[id] = name;
                Console.WriteLine("*****insert sucsess*****");
               

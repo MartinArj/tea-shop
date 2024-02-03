@@ -14,7 +14,7 @@ namespace tea_shop
        static void Main(string[] args)
        {
            bool next_bill = true;
-           order_repositary or = new order_repositary();
+         
                product_repositary ap = new product_repositary();
                Console.WriteLine("1.add product");
                Console.WriteLine("2.update product");
@@ -27,7 +27,7 @@ namespace tea_shop
                    {
                        Console.WriteLine("enter product name:");
                        string name = Console.ReadLine();
-                       Console.WriteLine("enter product price point after end of dht with f:");
+                       Console.WriteLine("enter product price`");
                        float price = float.Parse(Console.ReadLine());
                        ap.addproduct(name, price);
                        
@@ -67,6 +67,7 @@ namespace tea_shop
                }
                while (next_bill)
                {
+                   order_repositary or = new order_repositary();
                Console.Write("Enter product number :");
                int op1 = int.Parse(Console.ReadLine());
                if (ap.available(op1)==false)

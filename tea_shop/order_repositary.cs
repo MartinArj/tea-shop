@@ -9,12 +9,12 @@ namespace tea_shop
    public class order_repositary
     {
        string path = @"Data Source=LENOVO\SQLEXPRESS;Initial Catalog=teashop;Integrated Security=True";
-        public List<order> orderlist = new List<order>();
+        public  List<order> orderlist = new List<order>();
         public void add_order(order temp)
         {
             this.orderlist.Add(temp);
         }
-        public void order_completed()
+        public  void order_completed()
         {
             using (SqlConnection con = new SqlConnection(path))
             {
